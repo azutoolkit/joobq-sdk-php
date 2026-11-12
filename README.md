@@ -4,7 +4,7 @@ A thin worker and producer client for the JoobQ SDK gateway of a self-hosted Joo
 workflow blueprints, run their tasks with retries, heartbeats and graceful shutdown, and enqueue jobs (up to 500 in one
 call with `enqueueMany`) or start workflows. With JoobQ Pro on the server: batches with completion callbacks (`createBatch`,
 `getBatch`) and a shared sliding-window rate limit (`rateLimit`).
-JoobQUI version 0.1.0; an SDK talks to a server of its own version or later.
+JoobQUI version 0.1.1; an SDK talks to a server of its own version or later.
 
 - Requirements: PHP 8.1 or newer with the `curl` and `json` extensions; `pcntl` for graceful shutdown.
 - Install: `composer require azutoolkit/joobq`.
@@ -19,8 +19,7 @@ JoobQUI version 0.1.0; an SDK talks to a server of its own version or later.
 - Connect: the server's origin and its SDK token, read by the examples from `JOOBQ_GATEWAY_URL` and `JOOBQ_SDK_TOKEN`.
 - Documentation: https://www.joobq.io/docs/develop/ (workers, jobs, workflows, the gateway contract).
 
-This package is generated from `templates/sdks/php` in https://github.com/azutoolkit/joobqui by
-`joobqui-selfhosted sdk:generate`: change the templates, not the generated files.
+More about JoobQ: https://www.joobq.io
 
 ## License
 
